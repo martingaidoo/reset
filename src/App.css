@@ -2,7 +2,7 @@
 
 
 body {
-    background: url('/images/fondo.jpg') no-repeat center center fixed;
+    background: url('/images/fondo.PNG') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     margin: 0;
@@ -11,4 +11,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.vertical-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left top 0;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.vertical-text.left {
+    left: 0;
+}
+
+.vertical-text.right {
+    right: 0;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: right top 0;
 }

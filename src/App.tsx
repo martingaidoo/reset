@@ -23,9 +23,12 @@ function App() {
             {/* Fireworks Canvas */}
             <canvas ref={canvasRef} className="fireworks-canvas"
                     style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}></canvas>
+            <div className="vertical-text left">GENERAL +18</div>
+            <div className="vertical-text right">VIP +24 / +30</div>
             <div className="text-white">
                 <div className="container pt-2">
-                    <h1 className="text-center anton-regular">RESET - OUTDOOR</h1>
+                    <h1 className="text-center anton-regular">RESET</h1>
+                    <h3 className="text-center anton-regular">OUTDOOD</h3>
                     <ComponentDownCount />
                 </div>
 
@@ -34,7 +37,7 @@ function App() {
                         src={"images/logo.png"}
                         alt=""
                         className="position-absolute top-50 start-50 translate-middle"
-                        style={{ width: "350px", height: "200px", zIndex: -1 }}
+                        style={{ width: "300px", height: "160px", zIndex: -1 }}
                     />
                 </div>
                 <div className="container mt-2 d-flex justify-content-center align-items-center">
