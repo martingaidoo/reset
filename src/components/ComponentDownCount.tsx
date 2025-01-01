@@ -4,7 +4,7 @@ import "../styles/styleDownCount.css"
 export const ComponentDownCount = () => {
     console.log("v2")
     const now = new Date();
-    const may5th = new Date(now.getFullYear()+1, 0, 1); // Los meses en JavaScript empiezan en 0, por lo que mayo es 4
+    const may5th = new Date(now.getFullYear(), 0, 1); // Los meses en JavaScript empiezan en 0, por lo que mayo es 4
     const millisecondsUntilMay4th = may5th.getTime() - now.getTime();
 
     const countToDate = new Date().setHours(new Date().getHours()) + millisecondsUntilMay4th
